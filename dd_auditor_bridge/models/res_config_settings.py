@@ -18,5 +18,4 @@ class ResConfigSettings(models.TransientModel):
         string="D&D Auditor App URL",
         help="Base URL of the D&D Auditor API, e.g. https://dd-auditor-api.onrender.com",
         config_parameter='dd_auditor_bridge.app_url',
-        default='http://localhost:3001',
     )
