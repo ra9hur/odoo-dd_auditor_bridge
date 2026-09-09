@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_dd" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.dd</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='account']" position="inside">
+                <block title="D&amp;D Auditor" name="dd_auditor_block">
+                        <setting string="D&amp;D Auditor Integration" help="Enable the Verify D&amp;D Charges button on Vendor Bills.">
+                            <field name="cfg_enable_dd_auditor"/>
+                        </setting>
+                    <setting string="HMAC Secret" help="Must match ODOO_HMAC_SECRET in the backend.">
+                        <field name="dd_hmac_secret" password="True"/>
+                    </setting>
+                    <setting string="App URL" help="Base URL of the D&amp;D Auditor API.">
+                        <field name="dd_app_url"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

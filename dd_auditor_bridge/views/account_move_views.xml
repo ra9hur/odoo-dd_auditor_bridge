@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_move_form_inherit_dd_auditor" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.dd.auditor</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_redirect_to_dd_auditor"
+                        type="object"
+                        string="Verify D&amp;D Charges"
+                        class="btn-primary"
+                        invisible="move_type != 'in_invoice'"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

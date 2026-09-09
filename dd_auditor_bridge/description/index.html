@@ -1,0 +1,75 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">D&amp;D Auditor Bridge</h2>
+            <h3 class="oe_slogan">Seamless Single Sign-On from Odoo Vendor Bills to the D&amp;D Auditor Web Application</h3>
+        </div>
+        <div class="oe_span12">
+            <p>Adds a &quot;Verify D&amp;D Charges&quot; button to your Vendor Bills (Invoices). Clicking it opens the D&amp;D Auditor Web Application, securely authenticated against your Odoo session via a shared HMAC-signed token. No data is stored locally in Odoo &mdash; this module is a thin, stateless connector.</p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Features</h2>
+        </div>
+        <div class="oe_span6">
+            <div class="oe_demo oe_picture oe_screenshot">
+                <img src="icon.png" alt="D&amp;D Auditor brand icon"/>
+            </div>
+        </div>
+        <div class="oe_span6">
+            <ul>
+                <li>One-click &quot;Verify D&amp;D Charges&quot; button on Vendor Bill forms.</li>
+                <li>Automated Single Sign-On using an HMAC-SHA256 signed token.</li>
+                <li>Per-company admin toggle to enable or disable the integration.</li>
+                <li>Configurable App URL and shared HMAC secret.</li>
+                <li>No additional data stored in Odoo.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Configuration</h2>
+        </div>
+        <div class="oe_span12">
+            <ol>
+                <li>Install the module.</li>
+                <li>Go to <b>Settings &rarr; General Settings &rarr; D&amp;D Auditor</b>.</li>
+                <li>Enable the <b>D&amp;D Auditor Integration</b> toggle.</li>
+                <li>Set the <b>App URL</b> to your D&amp;D Auditor API base URL (e.g. <code>https://dd-auditor-api.onrender.com</code>).</li>
+                <li>Enter the <b>HMAC Secret</b>. It must match the <code>ODOO_HMAC_SECRET</code> configured in the D&amp;D Auditor backend.</li>
+                <li>Save your settings.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Usage</h2>
+        </div>
+        <div class="oe_span12">
+            <p>Open a <b>Vendor Bill</b> (Incoming Invoice). In the header, click the <b>Verify D&amp;D Charges</b> button. A new tab will open the D&amp;D Auditor application, logged in securely on your behalf.</p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Free Module &mdash; Paid Subscription Applies</h2>
+        </div>
+        <div class="oe_span12">
+            <p><b>Important:</b> This module is a <b>free connector</b> that requires an active paid tier subscription to the <b>D&amp;D Audit Web Application</b> in order to function. The Odoo module itself is free, but access to the connected audit service is provided under a separate paid subscription.</p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_separator"></section>
