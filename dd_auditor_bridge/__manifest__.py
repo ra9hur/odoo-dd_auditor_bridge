@@ -9,6 +9,7 @@
     'description': "Free connector that adds a 'Verify D&D Charges' button to Vendor Bills, "
                    "providing single sign-on to the D&D Auditor Web Application. Requires an "
                    "active paid subscription to the D&D Audit Web Application.",
+    'images': ['static/description/main_screenshot.png'],
     'depends': ['account'],
     'data': [
         'views/res_config_settings_views.xml',
